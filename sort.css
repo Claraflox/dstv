@@ -1,0 +1,103 @@
+body{
+  height: 100vh;
+  width: 100%;
+}
+
+
+
+.header{
+  text-align: end;
+
+  justify-content: end;
+  align-items: end;
+  margin-top: 2px;
+  background-color: blue;
+  height: 7rem;
+  list-style: none;
+   
+  
+}
+ .header nav ul{
+  list-style: none;
+  display: flex;
+  text-align: end;
+  justify-content: end;
+  gap: 5rem;
+  padding-right: 10rem;
+  padding-top: 3rem;
+  color: #ffff;
+  font-size: 23px;
+ }
+ .header nav ul li:hover{
+  color: red;
+  cursor: pointer;
+  transition: 2s ease-out;
+ }
+
+form{
+  border: none;
+  /* background-color: blue; */
+  border-color: black;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+  height: 10rem;
+  width: 10%;
+
+}
+.container form{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 15rem;
+  width: 100%;
+  
+
+}
+.container h1{
+  font-weight: 900;
+  font-size: 24px;
+  font-family: sans-serif;
+  color: aqua;
+  display: flex;
+  justify-content: center;
+}
+
+#user{
+  width: 20%;
+  margin-bottom: 10px;
+  font-size: 19px;
+  border-radius: 5px;
+
+}
+#mail{
+  width: 20%;
+  margin-bottom: 10px;
+  font-size: 19px;
+  border-radius: 5px;
+
+
+}
+#word{
+  width: 20%;
+  margin-bottom: 10px;
+  font-size: 19px;
+  border-radius: 5px;
+
+}
+#phone{
+  width: 20%;
+  margin-bottom: 10px;
+  font-size: 19px;
+  border-radius: 5px;
+  padding-right: px;
+
+}
+button{
+  /* font-size: 19px; */
+  width: 18rem;
+  height: 40px;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+}

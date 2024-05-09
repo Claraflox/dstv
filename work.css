@@ -1,0 +1,711 @@
+header{
+  background-color: #212529;
+  color: #fff;
+  display: flex;
+  padding: 1rem;
+  font-size: 19.2px;
+}
+
+  
+
+
+
+.logo nav{
+  /* background-color: red; */
+  width: 85%;
+}
+
+.logo nav ul{
+  display: flex;
+  float: right;
+  list-style: none;
+}
+
+
+.logo nav ul li{
+  margin: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+
+}
+
+
+.logo nav ul li a:hover{
+  color: aqua;
+  cursor: pointer;
+  transition: 2s;
+  transform: scale(1.05);
+}
+
+.logo nav ul li a{
+  color: green;
+  text-decoration: none; 
+
+}
+
+
+.logo{
+  display: flex;
+  margin-left: 2rem;
+  width: 85rem;
+ } 
+  
+  
+
+.logo img{
+  display: flex;
+  height: 68px;
+  width: 68px;
+  margin: 0.5rem;
+}
+
+
+
+.grid-section{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr 1fr ;
+  gap: 0.5rem;
+  padding: 1rem;
+  /* overflow: hidden; */
+  position: relative;
+  background-color: black;
+}
+
+
+
+.section-one{
+  background: url(./asset/grid-one.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  grid-column: 1 / span 1;
+  grid-row: 1 /span 1;
+  /* box-sizing: border-box; */
+  color: #fff;
+ position: relative; 
+ /* opacity: 5px;  */
+}
+
+  
+
+
+
+.section-one h1{
+  font-size: 30px;
+  position: relative;
+  color: blue;
+}
+
+/* sir, this ::before and ::after gave me tough time ooo*/
+.section-one h1::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  background-color: red;
+  height: 4px;
+  width: 100%;
+  transition: width .3s ease-out .2s;
+}
+
+
+.section-one h1::after{
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  left: 0;
+  bottom: 3px;
+  height: 4px;
+  transition: width .3s ease-out .2s;
+}
+
+
+.section-one:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./asset/grid-one.jpg);
+  background-position: center;
+  background-size: cover;
+  transform: scale(1.05);
+  transition: 1s;
+  cursor: pointer;
+  filter: blur(5px);
+  transition-behavior: normal,normal;
+  transition-duration: 0.5s, 0.2s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  transition-property: transform, filter;
+
+}
+
+
+.section-two{
+  background: url(./asset/grid-two.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  /* background-color: purple; */
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  
+}
+
+.section-two h1{
+  font-size: 30px;
+  position: relative;
+  color: blue;
+}
+
+
+.section-two h1::before{
+  content: "";
+  position: absolute;
+  left: center;
+  top: 3px;
+  background-color: red;
+  height: 4px;
+  width: 100%;
+  transition: width .3s ease-out .2s;
+  
+} 
+
+
+.section-two h1::after{
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  left: 0;
+  bottom: 3px;
+  height: 4px;
+  transition: width .3s ease-out .2s;
+}
+
+
+
+.section-two:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./asset/grid-two.jpg);
+  background-position: center;
+  background-size: cover;
+  transform: scale(1.02);
+  transition: 1s;
+  cursor: pointer;
+  filter: blur(10px);
+  transition-behavior: normal,normal;
+  transition-duration: 0.5s, 0.2s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  transition-property: transform, filter;
+}
+
+
+/* .section-two img{ */
+  /* height: 100%; */
+  /* width: 100%; */
+/* } */
+
+
+
+.section-three{
+  background: url(./asset/grid-three.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  background-color: rgb(182, 5, 5);
+  grid-column:2 / span 1 ;
+  grid-row: 1 / span 2;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+
+.section-three h1{
+  font-size: 30px;
+  position: relative;
+  color: blue;
+}
+
+.section-three h1::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  background-color: red;
+  height: 4px;
+  width: 100%;
+  transition: width.3s ease-out .2s;
+}
+
+
+.section-three h1::after{
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  left: 0;
+  bottom: 3px;
+  height: 4px;
+  transition: width .3s ease-out .2s;
+
+}
+
+
+.section-three:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./asset/grid-three.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: 1s;
+  filter: blur(10px);
+  opacity: 5px;
+  transition-behavior: normal,normal;
+  transition-duration: 0.5s, 0.2s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  transition-property: transform, filter;
+}
+
+
+/* .section-three img{
+  height: 100%;
+  width: 100%;
+} */
+
+
+.section-four{
+  background: url(./asset/grid-four.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  background-color: green;
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 2;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  
+}
+
+.section-four h1{
+  font-size: 30px;
+  position: relative;
+  color: blue;
+}
+
+
+.section-four h1::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  background-color: red;
+  height: 4px;
+  width: 100%;
+  transition: width .3s ease-out .2s;
+}
+
+
+.section-four h1::after{
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  left: 0;
+  bottom: 3px;
+  height: 4px;
+  transition: width .3s ease-out .2s;
+}
+
+
+.section-four:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./asset/grid-four.jpg);
+  background-position: center;
+  background-size: cover;
+  transform: scale(1.02);
+  transition: 2s;
+  filter: blur(10px);
+  cursor: pointer;
+  transition-behavior: normal,normal;
+  transition-duration: 0.5s, 0.2s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  transition-property: transform, filter;
+}
+/* .section-four img{
+  height: 100%;
+  width: 100%;
+} */
+
+
+.section-five{
+  background: url(./asset/grid-five.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  color: #fff;
+  background-color: pink;
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.section-five h1{
+  position: relative;
+  color: blue;
+  font-size: 30px;
+}
+
+
+.section-five h1::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  background-color: red;
+  height: 4px;
+  width: 100%;
+}
+
+
+.section-five h1::after{
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  left: 0;
+  bottom: 3px;
+  height: 4px;
+}
+
+
+.section-five:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./asset/grid-five.jpg);
+  background-position: center;
+  background-size: cover;
+  transform:scalex(1.02);
+  transition: 1s;
+  cursor: pointer;
+  filter: blur(10px);
+  transition-behavior: normal,normal;
+  transition-duration: 0.5s, 0.2s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  transition-property: transform, filter;
+}
+
+
+.section-six{
+  background: url(./asset/grid-six.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  background-color: red;
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  transition: 1s;
+}
+
+
+.section-six h1{
+  position: relative;
+  color: blue;
+  font-size: 30px;
+}
+
+.section-six h1::before{
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  left: 0;
+  top: 3px;
+  height: 4px;
+  transition: width .3s ease-in .2s;
+
+}
+
+.section-six h1::before:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width .3s ease-out .2s;
+  transform: scaleX(1.25px);
+}
+  
+
+
+
+.section-six h1::after{
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  left: 0;
+  bottom: 3px;
+  height: 4px;
+  transition: width .3s ease-out .2s;
+}
+.section-six h1::after:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width .3s ease-out .2s;
+  transform: scaleX(1.25px);
+}
+
+
+
+.section-six:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./asset/grid-six.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: 2s;
+  transform: scaleX(-.5);
+  cursor: pointer;
+  filter: blur(2px);
+  transition-behavior: normal,normal;
+  transition-duration: 0.5s, 0.2s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  transition-property: transform, filter;
+}
+
+
+/* .section-six img{
+  height: 366px;
+  width: 220.11;
+} */
+
+
+
+.last{
+  color: #fff;
+  background-color: #212529;
+  color: #fff;
+}
+
+.last img{
+  height: 90px;
+  width: 120px;
+  /* margin-left */
+  vertical-align: middle;
+}
+
+
+
+footer{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  background-color: #212529;
+  /* margin-top: 2rem; */
+}
+
+
+.icon i{
+margin-top: 5px;
+margin-inline: 5px;
+}
+
+
+.icon i:hover{
+  color: red;
+  
+}
+
+@media screen and (max-width:600px) {
+  header{
+    color: #fff;
+  }
+  
+  
+}
+@media screen and (max-width: 600px) {
+  .grid-section{
+    display:grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+
+    
+
+  }
+  
+}
+@media screen and  (max-width:600px) {
+  .section-one{
+    background: url(./asset/grid-one.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 3rem;
+
+
+
+  }
+}
+@media screen and (max-width: 600px) {
+  .section-two{
+    background: url(./asset/grid-two.jpg);
+    /* display: block; */
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 3rem;
+
+
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .section-three{
+    background: url(./asset/grid-three.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 3rem;
+
+
+  } 
+}
+
+
+@media screen and (max-width: 600px) {
+  .section-four{
+    background: url(./asset/grid-four.jpg);
+    /* display: block; */
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 3rem;
+
+
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .section-five{
+
+    background: url(./asset/grid-five.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .section-six{
+    background: url(./asset/grid-three.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 3rem;
+
+
+  }
+
+  
+}
+@media screen and (max-width: 600px) {
+  .logo nav{
+    width:85%
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  header{
+    padding: none;
+    display: flex;
+    font-size: 12px;
+    padding-right: 8px;
+
+
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .logo nav ul{
+    display: flex;
+    float: left;
+    text-decoration: none;
+
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .logo nav ul li{
+    margin: 2px;
+
+  }
+  
+}
+@media screen and (max-width: 600x) {
+  .logo{
+    margin-left: 1rem;
+    padding-right: 1.2rem;
+
+  }
+  
+}
+
+
+
+/* @media screen and (max-width: 600px) {
+  footer{
+    /* display: block; */
+    /* background-color: blue; */
+    /* position: relative; */
+    /* color: blue;
+    margin-top: 5rem; */
+
+    
+  /* } */
+  
+/* } * */
